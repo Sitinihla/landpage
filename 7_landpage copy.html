@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* ini adalah internal css */
+         
+         header{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 15px 0;
+            color: white;
+            border-radius: 10px;
+         }
+         nav {
+            background-color: aliceblue;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px;
+         }
+         nav a {
+            text-decoration: none;
+            color: rgb(25, 163, 176);
+            margin : 0 15px;
+            font-weight: bold;
+            border-radius: 10px;
+         }     
+         nav a:hover{
+            text-decoration: underline;
+            color: black;
+            font-size: medium;
+            border-radius: 10px;
+         }   
+         .hero{
+            text-align: center;
+            padding: 50px 0;;
+            height: 300px;
+            color: white;
+            text-shadow: 2px 4px 4px #000;
+            background: url("https://images.unsplash.com/photo-1658767309666-7059226e6de0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2081") 
+             no-repeat center center/cover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+            border-radius: 10px;
+         }
+         .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+            border-radius: 10px;
+         }
+         .services{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+         }
+         .service {
+            flex: 1;
+            min-width: 250px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0,0,0,0);
+         }
+         .service h3 {
+            color: #009df1;
+         }
+         section{
+            text-align: center;
+            background: #6c7276;
+            padding: 50px 0;
+            color: white;
+            border-radius: 10px;
+            margin:auto;
+         }
+
+         form{
+            background: #8f989b;
+            padding: 20px;
+            border-radius: 10px;
+         }
+         input, textarea {
+            width: 100%;
+            padding: 7px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+         }
+
+         button{
+            background: #9dd1e3;
+            color: rgb(76, 93, 95);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+         }
+         button:hover{
+            background: #0da3d5;
+         }
+
+         footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
+         }
+         </style>
+
+</head>
+<body>
+    <header>
+        <h1> Selamat Datang di PT LA</h1>
+        <p>Siap Melayani Dengan Cepat, Tepat</p>
+    </header>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#kontak">Kontak</a>
+        <a href="#tentang">Tentang</a>
+    </nav>
+    <section class = "hero" id="beranda">
+        <h1>Selamat Datang Di Website LA</h1>
+    </section>
+       <section class="container" id="layanan">
+        <h2 style="text-align:center;">Layanan Kami</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Servis Komputer</h3>
+                <p>Komputer, laptop & lainnya</p>
+            </div>
+             <div class="service">
+                <h3>Servis Mesin Cuci</h3>
+                <p>Tabung satu dan Tabung dua</p>
+            </div>
+             <div class="service">
+                <h3>Servis Motor</h3>
+                <p>Beat, Honda</p>
+            </div>
+        </div>
+    </section>
+   <section class="container" id="tentang">
+      <div class="services">
+         <div class="service">
+            <p>Layanan konstruksi mencakup berbagai kegiatan yang terkoordinasi untuk menciptakan struktur fisik, baik bangunan maupun infrastruktur. Proses ini melibatkan perencanaan, pengadaan material, pengerjaan lapangan, dan manajemen proyek untuk mencapai hasil yang diinginkan</p>
+         <h3>Tentang</h3>
+         </div>
+      </div>
+      </section>
+    <section class="container" id="kontak">
+      <h2 style="text-align: center;">Hubungi Kami</h2>
+      <form action="">
+         <label>Nama</label>
+         <input type="text" placeholder = "Masukan nama Anda">
+         <label>Email</label>
+         <input type="email" name="" id="" placeholder="Masukan Email Anda">
+         <textarea rows="5" placeholder="Tuliskan Pesan Anda di Sini" id=""></textarea>
+         <Button type="submit">Kirim</Button>
+      </form>
+    </section>
+    <footer>
+        <p> &copy; Copyright  ヾ(＠⌒ー⌒＠)ノ 2025 PT LA</p>
+    </footer>
+</body>
+</html>
